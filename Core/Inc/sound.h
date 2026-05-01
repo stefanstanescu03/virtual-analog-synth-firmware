@@ -53,7 +53,7 @@ void compute_next(volatile struct buffer* buf, uint8_t env_start, float sweep,
 
 void filter(volatile struct buffer* buf, float a, float k);
 
-advance_sequencer(volatile struct buffer *buf, uint32_t* sample_counter, uint32_t samples_per_step,
+void advance_sequencer(volatile struct buffer *buf, uint32_t* sample_counter, uint32_t samples_per_step,
 		volatile uint16_t* note_index, volatile uint16_t* octaves, volatile uint16_t* slides,
 		volatile uint16_t* accents, volatile uint16_t* sequence, volatile uint16_t curr,
 		float sweep, volatile int16_t active_pages);
